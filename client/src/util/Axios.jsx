@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = "https://registration-nine-mu.vercel.app"
+const baseURL = import.meta.env.VITE_API
 export const Axios = axios.create({
     baseURL:baseURL,
     withCredentials:true
